@@ -26,7 +26,7 @@ console.log(bill);
 // }
 ```
 
-Bill names take the form `` `${billName}-${congress}` ``. They are case-insensitive and all seperators (periods or spaces) are optional.
+Legislation names take the form `TYPE.NUMBER`, optionally specifying a congress following a dash `-`. The correct abbreviations for different types of legislation are listed [here](https://www.govinfo.gov/help/bills#types). They are case-insensitive and all separators (periods or spaces) are optional.
 
 ### Vote records
 
@@ -45,4 +45,4 @@ console.log(vote);
 // }
 ```
 
-Vote names take the form of `` `${chamber}${session}.${number}-${congress}` ``. The period following separating the session number from the vote number is required.
+Vote names take the form of `CHAMBER.SESSION.NUMBER`, optionally specifying a congress following a dash `-`. Like legislation, they are case-insensitive and separators are optional; however, Senate votes require a separator between the session number and vote number to distinguish them from Senate bills.
