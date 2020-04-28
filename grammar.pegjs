@@ -1,5 +1,5 @@
 Item
-    = item:( Vote / Legislation ) '-' congress:Congress
+    = item:( Vote / Legislation ) '-' congress:Number
     {
         if (item.chamber === 's')
             item.chamber = 'Senate'
@@ -72,9 +72,6 @@ ResolutionType
 
 Chamber
     = chamber:[hs]i { return chamber.toLowerCase() }
-
-Congress
-    = n:Number & { return n >= 105 } { return n }
 
 Number
     = n:[0-9]+ { return Number(n.join('')) }
