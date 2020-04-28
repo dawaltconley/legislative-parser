@@ -11,7 +11,7 @@ Item
     }
 
 Vote
-    = ch:Chamber _ session:[12] '.' num:Number
+    = ch:Chamber _ session:[12] s:_ ! { return ch === 's' && !s } num:Number
     {
         return {
             id: num.toString(),
