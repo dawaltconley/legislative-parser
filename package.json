@@ -1,0 +1,21 @@
+{
+  "name": "bill-parser",
+  "version": "0.1.0",
+  "description": "A simple parser for identifying bills and other congressional items.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parser",
+    "pegjs",
+    "bills",
+    "votes",
+    "congress"
+  ],
+  "author": "Dylan Awalt-Conley",
+  "license": "ISC",
+  "dependencies": {
+    "pegjs": "^0.10.0"
+  }
+}
