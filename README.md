@@ -26,13 +26,13 @@ console.log(bill);
 // }
 ```
 
-Bill names take the form `\`${billName}-${congress}\``. They are case-insensitive and all seperators (periods or spaces) are optional.
+Bill names take the form `` `${billName}-${congress}` ``. They are case-insensitive and all seperators (periods or spaces) are optional.
 
 ### Vote Records
 
 You can also parse the references to roll call votes. (These don't have official identifiers besides their number, so I had to get a little creative.)
 
-```
+```javascript
 var vote = parse('S.2.266-116');
 console.log(vote);
 
@@ -45,4 +45,4 @@ console.log(vote);
 // }
 ```
 
-Vote names take the form of `\`${chamber}${session}.${number}-${congress}\``. The period following separating the session number from the vote number is required.
+Vote names take the form of `` `${chamber}${session}.${number}-${congress}` ``. The period following separating the session number from the vote number is required.
