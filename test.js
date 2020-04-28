@@ -79,6 +79,21 @@ const tests = [
     },
     {
         input: [
+            's148-113',
+            'S.148-113',
+            'S148-113'
+        ],
+        output: {
+            id: 's148',
+            chamber: 'Senate',
+            type: 'Bill',
+            binding: true,
+            number: 148,
+            congress: 113
+        }
+    },
+    {
+        input: [
             'sconres32-116',
             'S.Con.Res.32-116',
             'SCONRES32-116'
@@ -140,7 +155,9 @@ const tests = [
         input: [
             'h2.34-116',
             'H.2.34-116',
-            'H2.34-116'
+            'H2.34-116',
+            'H.234-116',
+            'h234-116'
         ],
         output: {
             id: '34',
