@@ -1,5 +1,6 @@
 Item
-    = item:( Vote / Legislation ) congress:( '-' Number )?
+    = item:( AmendmentTo / Vote / Legislation ) congress:( '-' Number )?
+    / item:Amendment
     {
         if (item.chamber === 's')
             item.chamber = 'Senate'
@@ -8,6 +9,24 @@ Item
         if (congress)
             item.congress = congress[1]
         return item
+    }
+
+AmendmentTo
+    = a:Amendment '-' l:Legislation
+    {
+        a.amending = l
+        return a
+    }
+
+Amendment
+    = ch:Chamber _ 'amdt'i _ num:Number
+    {
+        return {
+            id: ch + 'amdt' + num,
+            chamber: ch,
+            type: 'Amendment',
+            number: num
+        }
     }
 
 Vote
