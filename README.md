@@ -28,7 +28,7 @@ console.log(bill);
 
 Bill names take the form `` `${billName}-${congress}` ``. They are case-insensitive and all seperators (periods or spaces) are optional.
 
-### Vote Records
+### Vote records
 
 You can also parse the references to roll call votes. (These don't have official identifiers besides their number, so I had to get a little creative.)
 
