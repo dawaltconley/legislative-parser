@@ -19,6 +19,20 @@ const tests = [
     },
     {
         input: [
+            'hconres142',
+            'H.Con.Res.142',
+            'HCONRES.142'
+        ],
+        output: {
+            id: 'hconres142',
+            chamber: 'House',
+            type: 'Concurrent Resolution',
+            binding: false,
+            number: 142
+        }
+    },
+    {
+        input: [
             'hjres83-116',
             'H.J.Res.83-116',
             'HJRES.83-116'
@@ -153,6 +167,19 @@ const tests = [
     },
     {
         input: [
+            's2.266',
+            'S.2.266',
+            'S2.266'
+        ],
+        output: {
+            id: '266',
+            chamber: 'Senate',
+            type: 'Vote',
+            session: 2
+        }
+    },
+    {
+        input: [
             'h2.34-116',
             'H.2.34-116',
             'H2.34-116',
@@ -165,6 +192,21 @@ const tests = [
             type: 'Vote',
             session: 2,
             congress: 116
+        }
+    },
+    {
+        input: [
+            'h2.34',
+            'H.2.34',
+            'H2.34',
+            'H.234',
+            'h234'
+        ],
+        output: {
+            id: '34',
+            chamber: 'House',
+            type: 'Vote',
+            session: 2
         }
     },
 ]
