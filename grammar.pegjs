@@ -1,14 +1,13 @@
 Item
-    = item:( Vote / Legislation ) '-' congress:Number
+    = item:( Vote / Legislation ) congress:( '-' Number )?
     {
         if (item.chamber === 's')
             item.chamber = 'Senate'
         else if (item.chamber === 'h')
             item.chamber = 'House'
-        return {
-            ...item,
-            congress: congress
-        }
+        if (congress)
+            item.congress = congress[1]
+        return item
     }
 
 Vote
