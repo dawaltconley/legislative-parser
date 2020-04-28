@@ -76,4 +76,4 @@ Number
     = n:[0-9]+ { return Number(n.join('')) }
 
 _ "separator"
-    = [ .]? { return null }
+    = [ .]?
