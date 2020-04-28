@@ -1,5 +1,5 @@
 {
-  "name": "bill-parser",
+  "name": "legislative-parser",
   "version": "0.1.0",
   "description": "A simple parser for identifying bills and other congressional items.",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "keywords": [
     "parser",
     "pegjs",
+    "legislation",
     "bills",
     "votes",
     "congress"
