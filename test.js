@@ -14,7 +14,7 @@ const tests = [
             type: 'Concurrent Resolution',
             binding: false,
             number: 142,
-            congress: '115'
+            congress: 115
         }
     },
     {
@@ -29,7 +29,7 @@ const tests = [
             type: 'Joint Resolution',
             binding: false,
             number: 83,
-            congress: '116'
+            congress: 116
         }
     },
     {
@@ -44,7 +44,7 @@ const tests = [
             type: 'Bill',
             binding: true,
             number: 5543,
-            congress: '116'
+            congress: 116
         }
     },
     {
@@ -59,7 +59,7 @@ const tests = [
             type: 'Simple Resolution',
             binding: false,
             number: 132,
-            congress: '105'
+            congress: 105
         }
     },
     {
@@ -74,7 +74,7 @@ const tests = [
             type: 'Bill',
             binding: true,
             number: 893,
-            congress: '113'
+            congress: 113
         }
     },
     {
@@ -89,7 +89,7 @@ const tests = [
             type: 'Concurrent Resolution',
             binding: false,
             number: 32,
-            congress: '116'
+            congress: 116
         }
     },
     {
@@ -104,7 +104,7 @@ const tests = [
             type: 'Joint Resolution',
             binding: false,
             number: 52,
-            congress: '115'
+            congress: 115
         }
     },
     {
@@ -119,7 +119,7 @@ const tests = [
             type: 'Simple Resolution',
             binding: false,
             number: 573,
-            congress: '113'
+            congress: 113
         }
     },
     {
@@ -132,8 +132,8 @@ const tests = [
             id: '266',
             chamber: 'Senate',
             type: 'Vote',
-            session: '2',
-            congress: '116'
+            session: 2,
+            congress: 116
         }
     },
     {
@@ -146,8 +146,8 @@ const tests = [
             id: '34',
             chamber: 'House',
             type: 'Vote',
-            session: '2',
-            congress: '116'
+            session: 2,
+            congress: 116
         }
     },
 ]

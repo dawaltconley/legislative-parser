@@ -15,10 +15,10 @@ Vote
     = ch:Chamber _ session:[12] '.' num:Number
     {
         return {
-            id: num,
+            id: num.toString(),
             chamber: ch,
             type: 'Vote',
-            session: session
+            session: Number(session)
         }
     }
 
@@ -26,7 +26,7 @@ Legislation
     = l:( Resolution / Bill ) _ num:Number
     {
         l.id = l.id + num
-        l.number = Number(num)
+        l.number = num
         return l
     }
 
@@ -74,10 +74,10 @@ Chamber
     = chamber:[hs]i { return chamber.toLowerCase() }
 
 Congress
-    = n:Number & { return Number(n) >= 105 } { return n.toString() }
+    = n:Number & { return n >= 105 } { return n }
 
 Number
-    = n:[0-9]+ { return n.join('') }
+    = n:[0-9]+ { return Number(n.join('')) }
 
 _ "separator"
     = [ .]? { return null }
