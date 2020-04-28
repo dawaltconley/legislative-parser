@@ -33,7 +33,7 @@ const tests = [
         }
     },
     {
-        input: [ 
+        input: [
             'hr5543-116',
             'H.R.5543-116',
             'H.R5543-116'
@@ -48,7 +48,7 @@ const tests = [
         }
     },
     {
-        input: [ 
+        input: [
             'hres132-105',
             'H.Res.132-105',
             'H.RES132-105'
@@ -63,7 +63,7 @@ const tests = [
         }
     },
     {
-        input: [ 
+        input: [
             's893-113',
             'S.893-113',
             'S893-113'
@@ -78,7 +78,7 @@ const tests = [
         }
     },
     {
-        input: [ 
+        input: [
             'sconres32-116',
             'S.Con.Res.32-116',
             'SCONRES32-116'
@@ -93,7 +93,7 @@ const tests = [
         }
     },
     {
-        input: [ 
+        input: [
             'sjres52-115',
             'S.J.Res52-115',
             'SJRES52-115'
@@ -108,7 +108,7 @@ const tests = [
         }
     },
     {
-        input: [ 
+        input: [
             'sres573-113',
             'S.Res.573-113',
             'SRES573-113'
@@ -123,7 +123,7 @@ const tests = [
         }
     },
     {
-        input: [ 
+        input: [
             's2.266-116',
             'S.2.266-116',
             'S2.266-116'
@@ -137,7 +137,7 @@ const tests = [
         }
     },
     {
-        input: [ 
+        input: [
             'h2.34-116',
             'H.2.34-116',
             'H2.34-116'
