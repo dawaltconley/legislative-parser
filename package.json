@@ -3,6 +3,9 @@
   "version": "0.2.1",
   "description": "A simple parser for identifying bills and other congressional items.",
   "main": "parser.js",
+  "files": [
+    "/parser.js"
+  ],
   "scripts": {
     "build": "node build.js",
     "test": "node test.js",
