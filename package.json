@@ -2,9 +2,11 @@
   "name": "legislative-parser",
   "version": "0.2.1",
   "description": "A simple parser for identifying bills and other congressional items.",
-  "main": "index.js",
+  "main": "parser.js",
   "scripts": {
-    "test": "node test.js"
+    "build": "node build.js",
+    "test": "node test.js",
+    "prepublishOnly": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -20,10 +22,9 @@
   ],
   "author": "Dylan Awalt-Conley",
   "license": "ISC",
-  "dependencies": {
-    "pegjs": "^0.10.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^7.2.0"
+    "eslint": "^7.2.0",
+    "pegjs": "^0.10.0"
   }
 }

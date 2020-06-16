@@ -5,7 +5,7 @@ A simple parser for identifying bills and other legislative items of the US Cong
 ## Usage
 
 ```javascript
-var parse = require('legislative-parser');
+var leg = require('legislative-parser');
 ```
 
 ### Legislation
@@ -13,8 +13,7 @@ var parse = require('legislative-parser');
 Pass in the name of a bill or resolution to get information regarding it.
 
 ```javascript
-var bill = parse('H.Con.Res.142-115');
-console.log(bill);
+leg.parse('H.Con.Res.142-115');
 
 // {
 //     id: 'hconres142',
@@ -33,8 +32,7 @@ Legislation names take the form `TYPE.NUMBER`, optionally specifying a congress 
 You can also parse the references to roll call votes. (These don't have official identifiers besides their number, so I had to get a little creative.)
 
 ```javascript
-var vote = parse('S.2.266-116');
-console.log(vote);
+leg.parse('S.2.266-116');
 
 // {
 //     id: '266',

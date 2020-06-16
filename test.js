@@ -1,5 +1,7 @@
-const assert = require('assert').strict
-const parse = require('./index.js')
+require('./build.js');
+
+const assert = require('assert').strict;
+const parse = require('./parser.js').parse;
 
 const tests = [
     {
@@ -209,12 +211,12 @@ const tests = [
             session: 2
         }
     },
-]
+];
 
 for (const test of tests) {
     for (const input of test.input) {
-        assert.deepStrictEqual(parse(input), test.output)
+        assert.deepStrictEqual(parse(input), test.output);
     }
 }
 
-console.log('All tests passed.')
+console.log('All tests passed.');
