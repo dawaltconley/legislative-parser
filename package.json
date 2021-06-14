@@ -25,7 +25,6 @@
   ],
   "author": "Dylan Awalt-Conley",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.2.0",
     "pegjs": "^0.10.0"
