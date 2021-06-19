@@ -22,11 +22,21 @@ Vote
     }
 
 Legislation
-    = l:( Resolution / Bill ) _ num:Number
+    = l:( Resolution / Amendment / Bill ) _ num:Number
     {
         l.id = l.id + num
         l.number = num
         return l
+    }
+
+Amendment
+    = ch:Chamber _ 'amdt'i
+    {
+        return {
+            id: ch + 'amdt',
+            chamber: ch,
+            type: 'Amendment',
+        }
     }
 
 Bill
