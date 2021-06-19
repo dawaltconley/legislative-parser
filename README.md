@@ -10,7 +10,7 @@ var leg = require('legislative-parser');
 
 ### Legislation
 
-Pass in the name of a bill or resolution to get information regarding it.
+Pass in the name of a bill or resolution to get an object describing it.
 
 ```javascript
 leg.parse('H.Con.Res.142-115');
@@ -26,6 +26,24 @@ leg.parse('H.Con.Res.142-115');
 ```
 
 Legislation names take the form `TYPE.NUMBER`, optionally specifying a congress following a dash `-`. The correct abbreviations for different types of legislation are listed [here](https://www.govinfo.gov/help/bills#types). They are case-insensitive and all separators (periods or spaces) are optional.
+
+### Amendments
+
+The parser also accepts amendments.
+
+```javascript
+leg.parse('H.Amdt.242-114');
+
+// {
+//    id: 'hamdt242',
+//    chamber: 'House',
+//    type: 'Amendment',
+//    number: 242,
+//    congress: 114
+// }
+```
+
+Amendment names take the form of `CHAMBER.Amdt.NUMBER`, optionally specifying a congress following a dash `-`. They are case-insensitive and all separators (periods or spaces) are optional.
 
 ### Vote records
 
