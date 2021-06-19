@@ -211,6 +211,60 @@ const tests = [
             session: 2
         }
     },
+    {
+        input: [
+            'samdt541-114',
+            'S.Amdt.541-114',
+            'SAMDT.541-114'
+        ],
+        output: {
+            "id": "samdt541",
+            "chamber": "Senate",
+            "type": "Amendment",
+            "number": 541,
+            "congress": 114
+        }
+    },
+    {
+        input: [
+            'samdt541',
+            'S.Amdt.541',
+            'SAMDT.541'
+        ],
+        output: {
+            "id": "samdt541",
+            "chamber": "Senate",
+            "type": "Amendment",
+            "number": 541
+        }
+    },
+    {
+        input: [
+            'hamdt242-116',
+            'H.Amdt.242-116',
+            'HAMDT.242-116'
+        ],
+        output: {
+            "id": "hamdt242",
+            "chamber": "House",
+            "type": "Amendment",
+            "number": 242,
+            "congress": 116
+        }
+    },
+    {
+        input: [
+            'hamdt242',
+            'H.Amdt.242',
+            'HAMDT.242'
+        ],
+        output: {
+            "id": "hamdt242",
+            "chamber": "House",
+            "type": "Amendment",
+            "number": 242
+        }
+    }
 ];
 
 for (const test of tests) {
