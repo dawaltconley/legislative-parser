@@ -284,6 +284,7 @@ describe('Votes', () => {
           id: '34',
           chamber: 'House',
           type: 'Vote',
+          number: 34,
           session: 2,
           congress: 116
         }
@@ -303,6 +304,7 @@ describe('Votes', () => {
           id: '34',
           chamber: 'House',
           type: 'Vote',
+          number: 34,
           session: 2
         }
         expect(parse(leg)).toEqual(result)
@@ -323,6 +325,7 @@ describe('Votes', () => {
           id: '266',
           chamber: 'Senate',
           type: 'Vote',
+          number: 266,
           session: 2,
           congress: 116
         }
@@ -340,6 +343,7 @@ describe('Votes', () => {
           id: '266',
           chamber: 'Senate',
           type: 'Vote',
+          number: 266,
           session: 2
         }
         expect(parse(leg)).toEqual(result)

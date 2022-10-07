@@ -15,13 +15,13 @@ interface Common {
   id: string;
   chamber: Chamber;
   type: string;
+  number: number;
   congress?: number;
 }
 
 export interface Legislation extends Common {
   type: ResolutionType | 'Bill';
   binding: boolean;
-  number: number;
 }
 
 export interface Resolution extends Legislation {
@@ -36,7 +36,6 @@ export interface Bill extends Legislation {
 
 export interface Amendment extends Common {
   type: 'Amendment';
-  number: number;
 }
 
 export interface Vote extends Common {

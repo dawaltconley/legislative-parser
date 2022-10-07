@@ -64,6 +64,7 @@ leg.parse('S.2.266-116');
 //     id: '266',
 //     chamber: 'Senate',
 //     type: 'Vote',
+//     number: 266,
 //     session: 2,
 //     congress: 116
 // }

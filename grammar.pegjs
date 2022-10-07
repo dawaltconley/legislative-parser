@@ -17,6 +17,7 @@ Vote
       id: num.toString(),
       chamber: ch,
       type: 'Vote',
+      number: num,
       session: Number(session)
     }
   }
