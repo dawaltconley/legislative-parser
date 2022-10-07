@@ -23,11 +23,11 @@ Vote
   }
 
 Legislation
-  = l:( Resolution / Amendment / Bill ) _ num:Number
+  = leg:( Resolution / Amendment / Bill ) _ num:Number
   {
-    l.id = l.id + num
-    l.number = num
-    return l
+    leg.id += num
+    leg.number = num
+    return leg
   }
 
 Amendment
