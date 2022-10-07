@@ -62,3 +62,21 @@ leg.parse('S.2.266-116');
 ```
 
 Vote names take the form of `CHAMBER.SESSION.NUMBER`, optionally specifying a congress following a dash `-`. Like legislation, they are case-insensitive and separators are optional; however, Senate votes require a separator between the session number and vote number to distinguish them from Senate bills.
+
+### Typescript
+
+This project includes type declarations. You can import the types used via:
+
+```javascript
+import { Legislation, Resolution, Bill, Amendment, Vote } from 'legislative-parser/types';
+```
+
+You can also use the `Id` namespace to skip type checking the parser's results when you know how a given string will be parsed.
+
+```javascript
+import { Id } from 'legislative-parser/types';
+import { parse } from 'legislative-parser';
+
+const knownAmendment = 'hamdt242' as Id.Amendment;
+parse(knownAmendment); // returns an Amendment type
+```
